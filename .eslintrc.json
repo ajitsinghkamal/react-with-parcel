@@ -12,7 +12,7 @@
 	},
 	"rules": {
 		"indent": ["error", "tab"],
-		"react/prop-types": [0, { "ignore": ["children", "className"]}]
+		"react/prop-types": [2, { "ignore": ["children", "className"]}]
 	},
 	"settings": {
 		"react": {

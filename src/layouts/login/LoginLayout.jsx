@@ -1,7 +1,12 @@
 import React from 'react';
+import { RouterMatch } from 'shared/propShapes';
 import { Switch, Route } from 'react-router-dom';
 import { makeLazyRoute } from 'router/utils';
 import * as pages from 'modules/login';
+
+LoginLayout.propTypes = {
+	match: RouterMatch,
+};
 export default function LoginLayout({ match }) {
 	return (
 		<div>
