@@ -1,0 +1,54 @@
+{
+  "name": "clinikk_doctor_dashboard",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html -p 3000",
+    "build": "NODE_ENV=production parcel build index.html --no-cache",
+    "precommit": "lint-staged",
+    "pretest": "yarn run test:eslint",
+    "test:eslint": "eslint src/ --ext .js --ext .jsx"
+  },
+  "author": "Harshita Jaiswal",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.2.3",
+    "autoprefixer": "^9.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.0",
+    "husky": "^4.2.0",
+    "lint-staged": "^10.0.2",
+    "postcss-modules": "^1.5.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "router": "^1.3.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,scss,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "alias": {
+    "src": "./src/",
+    "core": "./src/core/",
+    "layouts": "./src/layouts/",
+    "modules": "./src/modules/",
+    "shared": "./src/shared/"
+  }
+}
