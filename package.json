@@ -45,10 +45,11 @@
     ]
   },
   "alias": {
-    "src": "./src/",
+    "@": "./src/",
     "core": "./src/core/",
     "layouts": "./src/layouts/",
     "modules": "./src/modules/",
-    "shared": "./src/shared/"
+    "shared": "./src/shared/",
+    "router": "./src/router/"
   }
 }

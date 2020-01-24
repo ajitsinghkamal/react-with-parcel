@@ -1,16 +1,22 @@
 {
-    "parser": "babel-eslint",
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "env": {
-        "browser": true,
-        "jest": true,
-        "es6": true
-    },
-    "rules": {
-        "indent": ["error", "tab"]
-    }
+	"parser": "babel-eslint",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended"
+	],
+	"env": {
+		"browser": true,
+		"jest": true,
+		"es6": true
+	},
+	"rules": {
+		"indent": ["error", "tab"],
+		"react/prop-types": [0, { "ignore": ["children", "className"]}]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
 }
