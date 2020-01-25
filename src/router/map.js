@@ -10,17 +10,10 @@ import LoginLayout from 'layouts/login';
 export default [
 	{
 		path: '/login',
-		exact: true,
-		Component: LoginLayout,
-	},
-	{
-		path: '/register',
-		exact: true,
 		Component: LoginLayout,
 	},
 	{
 		path: '/',
 		Component: MainLayout,
-		exact: true,
 	},
 ];

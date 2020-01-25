@@ -1,4 +1,4 @@
 import React from 'react';
-export default function LoginPage() {
+export default function OtpPage() {
 	return <div>otp</div>;
 }

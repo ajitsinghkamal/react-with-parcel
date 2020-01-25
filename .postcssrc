@@ -7,7 +7,10 @@
     "tailwindcss": true,
     "postcss-modules": {
       "generateScopedName": "[local]_[hash:base64:5]",
-      hashPrefix: "prefix"
+      hashPrefix: "prefix",
+      globalModulePaths: [
+        './src/assets/styles/tw.pcss'
+      ]
     }
   }
 }
