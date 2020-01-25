@@ -2,16 +2,17 @@ import React from 'react';
 import { RouterMatch } from 'shared/propShapes';
 import { Switch, Route } from 'react-router-dom';
 import { makeLazyRoute } from 'router/utils';
-import * as pages from 'modules/login';
+import * as pages from 'modules/auth';
+import style from './styles.scss';
 
 LoginLayout.propTypes = {
 	match: RouterMatch,
 };
 export default function LoginLayout({ match }) {
 	return (
-		<div>
-			<aside></aside>
-			<main>
+		<div className="flex">
+			<aside className={style.aside}></aside>
+			<main className="container mx-auto px-4">
 				<Switch>
 					<Route>{makeLazyRoute(pages.Login)}</Route>
 					<Route path={`${match.path}/otp`} exact>
